@@ -14,4 +14,18 @@ actions: {
 }
 ```
 
+Add this to your enviroment.js on config folfer:
+
+```
+torii: {
+      providers: {
+        'google-people': {
+          apiKey: 'YYYYYY-XXXXXX.apps.googleusercontent.com',
+          scope: 'profile email',
+          redirectUri: 'http://localhost:4200'
+        }
+      }
+    }
+```
+
 Base on https://github.com/Frozenfire92/EmberAuthTutorial
