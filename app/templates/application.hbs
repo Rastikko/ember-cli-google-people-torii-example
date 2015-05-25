@@ -1,0 +1,9 @@
+{{outlet}}
+
+{{#if isLoggedIn}}
+	{{userEmail}}
+{{else}}
+	<p>
+        <a {{action 'login'}}>Login</a>
+    </p>
+{{/if}}
